@@ -80,7 +80,5 @@ jobs:
             sudo yum update
             sudo yum install docker.io -y
             sudo yum install awscli -y
-            sudo docker stop awscicdcontainer || true
-            sudo docker rm awscicdcontainer || true
             sudo docker pull $REGISTRY/$REPOSITORY:$IMAGE_TAG
             sudo docker run -d --name awscicdcontainer -p 80:80 $REGISTRY/$REPOSITORY:$IMAGE_TAG
