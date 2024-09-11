@@ -8,8 +8,10 @@
 </head>
 <body>
     <div class="container-fluid">
-        <h2>Sample web page to demonstrate CI/CD pipeline with Github Actions</h2>
-        <p>Feel free to go to the <a href="https://github.com/tharangachaminda/aws-cicd" target="_blank">Github repository</a> and make changes to see it in action.</p>
+        <div class="d-flex flex-column align-items-center">
+            <h2>Sample web page to demonstrate CI/CD pipeline with Github Actions</h2>
+            <p>Feel free to go to the <a href="https://github.com/tharangachaminda/aws-cicd" target="_blank">Github repository</a> and make changes to see it in action.</p>
+        </div>
     </div>    
 </body>
 </html>
