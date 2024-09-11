@@ -81,7 +81,5 @@ jobs:
             sudo yum install docker.io -y
             sudo yum install awscli -y
             sudo $(aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 907659967075.dkr.ecr.us-west-2.amazonaws.com);
-            sudo docker stop awscicdcontainer || true
-            sudo docker rm awscicdcontainer || true
             sudo docker pull $REGISTRY/$REPOSITORY:$IMAGE_TAG
             sudo docker run -d --name awscicdcontainer -p 80:80 $REGISTRY/$REPOSITORY:$IMAGE_TAG
