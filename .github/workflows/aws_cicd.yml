@@ -83,4 +83,4 @@ jobs:
             docker stop awscicdcontainer || true
             docker rm awscicdcontainer || true
             docker pull $REGISTRY/$REPOSITORY:$IMAGE_TAG
-            docker run -d --name awscicdcontainer -p 80:80 $REGISTRY/$REPOSITORY:$IMAGE_TAG
+            docker run -it -d --name awscicdcontainer -p 8080:80 $REGISTRY/$REPOSITORY:$IMAGE_TAG
